@@ -5,7 +5,7 @@ const auth = express.Router()
 
 auth.post('/registration', controller.registration)
 auth.post('/login', controller.login)
-// auth.get('/logout', controller.logout)
-// auth.get('/users', controller.getUsers)
+auth.post('/logout', controller.logout)
+auth.post('/refresh', controller.refresh)
 
 export default auth
